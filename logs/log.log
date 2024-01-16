@@ -1,0 +1,633 @@
+2024-16 14:49:35   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:49:35   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 14:49:35   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 14:49:35   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:49:40   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:51:18   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:51:18   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 14:51:18   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 14:51:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:51:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:51:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:51:18   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 14:51:18   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 14:51:23   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:23   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:23   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:28   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:28   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:28   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;aaa;2024-01-16T14:51:31.076975474
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;aaa;2024-01-16T14:51:31.076975474
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;D;true
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   A log is replicated, committing log
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T14:51:31.076975474; TERM: 1; MESSAGE: aaa
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T14:51:31.076975474; TERM: 1; MESSAGE: aaa
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T14:51:31.076975474; TERM: 1; MESSAGE: aaa
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 14:51:31   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 14:51:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:38   ERROR   raft.Node   handleInputCommand   -   This node is not leader. It can not send messages to chat
+2024-16 14:51:38   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:38   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:38   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:48   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:48   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:51:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:52:03   INFO   raft.Node   lambda$sendAppendEntryMessage$0   -   Node B didn't respond for 3 times, updating nodes count
+2024-16 14:52:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 14:52:13   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 14:52:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;A;1;aaa;2024-01-16T14:51:31.076975474
+2024-16 14:52:13   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 14:52:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:52:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:52:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;3
+2024-16 14:52:24   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:52:24   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:52:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 2
+2024-16 14:52:24   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;B;2
+2024-16 14:52:24   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;D;true;B
+2024-16 14:52:24   INFO   raft.Node   becomeLeader   -   B becomes leader
+2024-16 14:52:24   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:24   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:24   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 14:52:29   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:29   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:34   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:34   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:34   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;2
+2024-16 14:52:34   INFO   raft.Node   confirmNewLeader   -   A confirms new leader
+2024-16 14:52:34   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;B;1;aaa;2024-01-16T14:51:31.076975474
+2024-16 14:52:34   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 14:52:39   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;3
+2024-16 14:52:39   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;3
+2024-16 14:52:39   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;3
+2024-16 14:52:44   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;3
+2024-16 14:52:44   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;3
+2024-16 14:52:50   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:52:51   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 3
+2024-16 14:52:51   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 4
+2024-16 14:52:51   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 5
+2024-16 14:52:51   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 6
+2024-16 14:52:52   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 7
+2024-16 14:52:52   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 8
+2024-16 14:52:52   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 9
+2024-16 14:52:52   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 10
+2024-16 14:52:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 11
+2024-16 14:52:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 12
+2024-16 14:52:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 13
+2024-16 14:52:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 14
+2024-16 14:52:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 15
+2024-16 14:52:54   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 16
+2024-16 14:52:54   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 17
+2024-16 14:52:54   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 18
+2024-16 14:52:54   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 19
+2024-16 14:52:55   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 20
+2024-16 14:52:55   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 21
+2024-16 14:52:55   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 22
+2024-16 14:52:55   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 23
+2024-16 14:52:55   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 24
+2024-16 14:52:56   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 25
+2024-16 14:52:56   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 26
+2024-16 14:52:56   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 27
+2024-16 14:52:56   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 28
+2024-16 14:52:57   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 29
+2024-16 14:52:57   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 30
+2024-16 14:52:57   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 31
+2024-16 14:52:57   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 32
+2024-16 14:52:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 33
+2024-16 14:52:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 34
+2024-16 14:52:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 35
+2024-16 14:52:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 36
+2024-16 14:52:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 37
+2024-16 14:52:59   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 38
+2024-16 14:56:57   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:56:58   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 14:56:58   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 14:56:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:56:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:56:58   INFO   raft.Node   confirmNewLeader   -   E confirms new leader
+2024-16 14:56:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:56:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:56:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 14:56:58   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 14:56:58   INFO   raft.Node   confirmNewLeader   -   C confirms new leader
+2024-16 14:56:58   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 14:57:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;k;2024-01-16T14:57:10.523697574
+2024-16 14:57:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 14:57:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 14:57:19   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:57:19   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 14:57:19   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 2
+2024-16 14:57:19   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 3
+2024-16 14:57:19   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 4
+2024-16 14:57:20   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 5
+2024-16 14:57:20   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 6
+2024-16 14:57:20   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 7
+2024-16 14:57:20   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 8
+2024-16 14:57:20   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 9
+2024-16 14:57:21   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 10
+2024-16 14:57:21   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 11
+2024-16 14:57:21   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 12
+2024-16 14:57:21   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 13
+2024-16 14:57:22   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 14
+2024-16 14:57:22   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 15
+2024-16 14:57:22   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 16
+2024-16 14:57:22   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 17
+2024-16 14:57:22   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 18
+2024-16 14:57:23   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 19
+2024-16 14:57:23   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 20
+2024-16 14:57:23   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 21
+2024-16 14:57:23   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 22
+2024-16 14:57:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 23
+2024-16 14:57:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 24
+2024-16 14:57:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 25
+2024-16 14:57:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 26
+2024-16 14:57:24   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 27
+2024-16 14:57:25   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 28
+2024-16 14:57:25   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 29
+2024-16 14:57:25   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 30
+2024-16 14:57:25   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 31
+2024-16 14:57:25   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 32
+2024-16 15:00:21   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:21   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 15:00:21   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 15:00:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 15:00:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 15:00:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 15:00:21   INFO   raft.Node   confirmNewLeader   -   E confirms new leader
+2024-16 15:00:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 15:00:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 15:00:21   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 15:00:21   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 15:00:21   INFO   raft.Node   confirmNewLeader   -   C confirms new leader
+2024-16 15:00:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;C;true
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   A log is replicated, committing log
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T15:00:30.498817005; TERM: 1; MESSAGE: a
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:00:30.498817005; TERM: 1; MESSAGE: a
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:00:30.498817005; TERM: 1; MESSAGE: a
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:00:30.498817005; TERM: 1; MESSAGE: a
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   LOG C. DATE: 2024-01-16T15:00:30.498817005; TERM: 1; MESSAGE: a
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 15:00:30   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 15:00:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;5
+2024-16 15:00:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:37   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 2
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;C;2
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;C;2
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;C;2
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;E;true;C
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;D;true;C
+2024-16 15:00:37   INFO   raft.Node   becomeLeader   -   C becomes leader
+2024-16 15:00:37   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;B;true;C
+2024-16 15:00:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:37   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 15:00:37   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 15:00:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:37   INFO   raft.Node   confirmNewLeader   -   E confirms new leader
+2024-16 15:00:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;C;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;C;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;C;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;D;true
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   C log is replicated, committing log
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   LOG C. DATE: 2024-01-16T15:00:46.337077972; TERM: 2; MESSAGE: c
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;C;2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;C;2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;C;2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:00:46.337077972; TERM: 2; MESSAGE: c
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:00:46.337077972; TERM: 2; MESSAGE: c
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:00:46.337077972; TERM: 2; MESSAGE: c
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 15:00:46   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 15:00:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;C;2;4
+2024-16 15:00:53   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:00:53   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 3
+2024-16 15:00:53   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;B;3
+2024-16 15:00:53   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;B;3
+2024-16 15:00:53   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;D;true;B
+2024-16 15:00:53   INFO   raft.Node   becomeLeader   -   B becomes leader
+2024-16 15:00:53   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;E;true;B
+2024-16 15:00:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:00:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:00:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:00:53   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 15:00:53   INFO   raft.Node   confirmNewLeader   -   E confirms new leader
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;B;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;B;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;E;true
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   B log is replicated, committing log
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:00:58.536348561; TERM: 3; MESSAGE: b
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;B;3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;B;3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:00:58.536348561; TERM: 3; MESSAGE: b
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:00:58.536348561; TERM: 3; MESSAGE: b
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:00:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;3;3
+2024-16 15:01:05   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:01:05   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 4
+2024-16 15:01:05   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: REQUEST;D;4
+2024-16 15:01:05   INFO   raft.RequestVoteListener   onMessage   -   Request vote message: ANSWER;E;true;D
+2024-16 15:01:05   INFO   raft.Node   becomeLeader   -   D becomes leader
+2024-16 15:01:05   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;D;4;2
+2024-16 15:01:05   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;D;4;2
+2024-16 15:01:05   INFO   raft.Node   confirmNewLeader   -   E confirms new leader
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;D;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;E;true
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   D log is replicated, committing log
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:01:08.847689089; TERM: 4; MESSAGE: d
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 4
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;D;4
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:01:08.847689089; TERM: 4; MESSAGE: d
+2024-16 15:01:08   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 4
+2024-16 15:01:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;D;4;2
+2024-16 15:01:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;D;4;2
+2024-16 15:01:16   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 15:01:16   INFO   raft.Node   becomeLeader   -   E becomes leader
+2024-16 15:01:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;1
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;1
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;1
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;1
+2024-16 15:01:21   INFO   raft.Node   confirmNewLeader   -   A confirms new leader
+2024-16 15:01:21   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:01:21   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:01:26   INFO   raft.Node   confirmNewLeader   -   C confirms new leader
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:01:26   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:01:26   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:01:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;C;true
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;D;true
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   E log is replicated, committing log
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:01:33.022150828; TERM: 5; MESSAGE: e
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:01:33.022150828; TERM: 5; MESSAGE: e
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:01:33.022150828; TERM: 5; MESSAGE: e
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T15:01:33.022150828; TERM: 5; MESSAGE: e
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 5
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   LOG C. DATE: 2024-01-16T15:01:33.022150828; TERM: 5; MESSAGE: e
+2024-16 15:01:33   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 5
+2024-16 15:01:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:01:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;5
+2024-16 15:02:01   INFO   raft.Node   lambda$sendAppendEntryMessage$0   -   Node C didn't respond for 3 times, updating nodes count
+2024-16 15:02:01   INFO   raft.Node   lambda$sendAppendEntryMessage$0   -   Node D didn't respond for 3 times, updating nodes count
+2024-16 15:02:01   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:01   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:06   INFO   raft.Node   lambda$sendAppendEntryMessage$0   -   Node B didn't respond for 3 times, updating nodes count
+2024-16 15:02:06   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:06   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e2;2024-01-16T15:02:10.986275382
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;A;true
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   E log is replicated, committing log
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:02:10.986275382; TERM: 5; MESSAGE: e2
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 6
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;6
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T15:02:10.986275382; TERM: 5; MESSAGE: e2
+2024-16 15:02:10   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 6
+2024-16 15:02:11   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:11   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;2
+2024-16 15:02:16   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 5 commit index = 5
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;5;e2;2024-01-16T15:02:10.986275382
+2024-16 15:02:16   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 6 commit index = 6
+2024-16 15:02:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e3;2024-01-16T15:02:25.944815064
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e3;2024-01-16T15:02:25.944815064
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;A;true
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   E log is replicated, committing log
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:02:25.944815064; TERM: 5; MESSAGE: e3
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 7
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;7
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;7
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T15:02:25.944815064; TERM: 5; MESSAGE: e3
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:02:25.944815064; TERM: 5; MESSAGE: e3
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 7
+2024-16 15:02:25   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 7
+2024-16 15:02:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;3
+2024-16 15:02:36   INFO   raft.Node   confirmNewLeader   -   D confirms new leader
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;1;a;2024-01-16T15:00:30.498817005
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 1 commit index = 1
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;2;c;2024-01-16T15:00:46.337077972
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 2 commit index = 2
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;3;b;2024-01-16T15:00:58.536348561
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 3 commit index = 3
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;4;d;2024-01-16T15:01:08.847689089
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 4 commit index = 4
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;5;e;2024-01-16T15:01:33.022150828
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 5 commit index = 5
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;5;e2;2024-01-16T15:02:10.986275382
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 6 commit index = 6
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPEAT;E;5;e3;2024-01-16T15:02:25.944815064
+2024-16 15:02:36   INFO   raft.AppendEntriesListener   onMessage   -   Logs count = 7 commit index = 7
+2024-16 15:02:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e4;2024-01-16T15:02:45.903262517
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e4;2024-01-16T15:02:45.903262517
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;E;5;e4;2024-01-16T15:02:45.903262517
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;D;true
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;A;true
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   E log is replicated, committing log
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   LOG E. DATE: 2024-01-16T15:02:45.903262517; TERM: 5; MESSAGE: e4
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;E;8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   LOG D. DATE: 2024-01-16T15:02:45.903262517; TERM: 5; MESSAGE: e4
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T15:02:45.903262517; TERM: 5; MESSAGE: e4
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 8
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T15:02:45.903262517; TERM: 5; MESSAGE: e4
+2024-16 15:02:45   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 8
+2024-16 15:02:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:46   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:51   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 15:02:56   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;E;5;4
+2024-16 21:12:36   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 21:12:36   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 21:12:36   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 21:12:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:12:41   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:14:47   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 21:14:48   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 21:14:48   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 21:14:48   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:14:53   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:14:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:14:58   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 21:14:58   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;hi;2024-01-16T21:15:02.797465369
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   A log is replicated, committing log
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T21:15:02.797465369; TERM: 1; MESSAGE: hi
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T21:15:02.797465369; TERM: 1; MESSAGE: hi
+2024-16 21:15:02   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 21:15:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:03   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:08   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:13   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:18   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;hi;2024-01-16T21:15:21.497871940
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   A log is replicated, committing log
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T21:15:21.497871940; TERM: 1; MESSAGE: hi
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;2
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T21:15:21.497871940; TERM: 1; MESSAGE: hi
+2024-16 21:15:21   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 21:15:23   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:15:23   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 21:55:32   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 21:55:32   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 21:55:32   INFO   raft.Node   becomeLeader   -   B becomes leader
+2024-16 21:55:32   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:55:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:55:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:55:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:55:52   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:55:57   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:07   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:12   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:17   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:22   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:27   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:27   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 21:56:27   INFO   raft.Node   confirmNewLeader   -   A confirms new leader
+2024-16 21:56:32   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:32   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;B;1;hi;2024-01-16T21:56:43.502036061
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;A;true
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   B log is replicated, committing log
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T21:56:43.502036061; TERM: 1; MESSAGE: hi
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;B;1
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T21:56:43.502036061; TERM: 1; MESSAGE: hi
+2024-16 21:56:43   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 21:56:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:52   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:52   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:57   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:56:57   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:02   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:07   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:07   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;B;1;hhhhh;2024-01-16T21:57:09.833907762
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;A;true
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   B log is replicated, committing log
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T21:57:09.833907762; TERM: 1; MESSAGE: hhhhh
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;B;2
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T21:57:09.833907762; TERM: 1; MESSAGE: hhhhh
+2024-16 21:57:09   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 2
+2024-16 21:57:12   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:12   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:17   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:17   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:22   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:27   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:32   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;2
+2024-16 21:57:37   INFO   raft.Node   lambda$sendAppendEntryMessage$0   -   Node A didn't respond for 3 times, updating nodes count
+2024-16 21:57:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;1;1
+2024-16 22:03:01   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 22:03:01   INFO   raft.Node   startElection   -   Election timeout. Starting election process... Term is 1
+2024-16 22:03:01   INFO   raft.Node   becomeLeader   -   A becomes leader
+2024-16 22:03:01   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 22:03:06   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 22:03:11   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 22:03:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 22:03:16   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;1
+2024-16 22:03:16   INFO   raft.Node   confirmNewLeader   -   B confirms new leader
+2024-16 22:03:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:21   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGENTRY;A;1;hi b;2024-01-16T22:03:24.939214547
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: REPLICATED;B;true
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   A log is replicated, committing log
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   LOG A. DATE: 2024-01-16T22:03:24.939214547; TERM: 1; MESSAGE: hi b
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: LOGCOMMIT;A;1
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   LOG B. DATE: 2024-01-16T22:03:24.939214547; TERM: 1; MESSAGE: hi b
+2024-16 22:03:24   INFO   raft.AppendEntriesListener   onMessage   -   log is committed, commit index = 1
+2024-16 22:03:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:26   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:31   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;A;1;2
+2024-16 22:03:37   INFO   raft.Node   checkHeartbeats   -   Leader do not respond. Starting election timeout
+2024-16 22:03:37   INFO   raft.Node   becomeLeader   -   B becomes leader
+2024-16 22:03:37   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;1
+2024-16 22:03:42   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;1
+2024-16 22:03:46   INFO   raft.Node   handleClientMessage   -   B log is replicated, committing log
+2024-16 22:03:46   INFO   raft.Node   handleClientMessage   -   LOG B. DATE: 2024-01-16T22:03:46.232165778; TERM: 2; MESSAGE: hi
+2024-16 22:03:46   INFO   raft.Node   handleClientMessage   -   log is committed, commit index = 2
+2024-16 22:03:47   INFO   raft.AppendEntriesListener   onMessage   -   Append entries message: HEARTBEAT;B;2;1
